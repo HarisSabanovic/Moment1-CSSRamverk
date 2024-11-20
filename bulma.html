@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+
+    <header class="mb-5">
+        <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">Moment 1</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Startsida</a>
+                    <a class="navbar-item" href="bootstrap.html">Bootstrap</a>
+                    <a class="navbar-item" href="bulma.html">Bulma</a>
+                    <a class="navbar-item" href="#">Vercel</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container has-text-white">
+
+        <h1 class="is-size-1 p-3">Bulma</h1>
+        <p class="p-3">Generellt sätt tycker jag att komponenterna i Bulma är bra, som knappar, kort och kolumner. De gör att man slipper börja från noll, och det sparar tid. Men en grej jag inte gillar är att man måste lägga till egen JavaScript-kod för att till exempel få navigeringsmenyn att fungera med en toggle-knapp på mobilen. Det känns lite bökigt jämfört med något som Bootstrap, där allt det där redan är fixat.</p>
+        <p class="p-3">Jag märkte att Bulma inte lägger på massor av padding och margin automatiskt. Detta gör att man har full kontroll över layouten, vilket är perfekt om man vill få allt att se exakt ut som man tänkt sig. Men det kan också bli lite jobbigt ibland, eftersom man måste fixa mycket själv för att det ska bli snyggt.</p>
+
+        <p class="p-3">Dokumentationen för Bulma är toppen, tycker jag. Den är tydlig och har bra exempel, så det är lätt att förstå hur man ska använda klasserna. Jag hade inga problem att få till navigeringsmenyn och andra grejer på sidan så att det såg ut som jag ville.
+
+            En nackdel med Bulma, enligt mig, är att det ibland kan kännas lite för minimalistiskt. Det är skönt att ha friheten att göra vad man vill, men det gör också att det kan ta längre tid att bli klar eftersom man måste styra upp så mycket själv. Det kan vara frustrerande om man bara vill att saker ska funka direkt.</p>
+
+
+    <table class="table is-striped is-hoverable is-fullwidth is-bordered is-responsive" id="tableID">
+        <thead>
+            <tr>
+                <th>Förnamn</th>
+                <th>Kön</th>
+                <th>Land</th>
+                <th>Kommentar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sven</td>
+                <td>Man</td>
+                <td>Sverige</td>
+                <td>Hej! Jag heter Sven och gillar Pingis</td>
+            </tr>
+            <tr>
+                <td>Anna</td>
+                <td>Kvinna</td>
+                <td>Norge</td>
+                <td>Hej! Jag heter Anna och gillar att baka</td>
+            </tr>
+            <tr>
+                <td>Martin</td>
+                <td>Man</td>
+                <td>Finland</td>
+                <td>Hej! Jag heter Martin och gillar att fiska</td>
+            </tr>
+            <tr>
+                <td>Emma</td>
+                <td>Kvinna</td>
+                <td>Island</td>
+                <td>Hej! Jag heter Emma och gillar att resa</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Man</td>
+                <td>Island</td>
+                <td>Hej! Jag heter Daniel och gillar tv-spel</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    <form id="formID" class="box">
+        <div class="field">
+            <label class="label" for="firstname">Förnamn</label>
+            <div class="control">
+                <input class="input" type="text" id="firstname" placeholder="Skriv ditt förnamn" required>
+            </div>
+        </div>
+    
+        <!-- Land -->
+        <div class="field">
+            <label class="label" for="country">Land</label>
+            <div class="control">
+                <div class="select">
+                    <select id="country" required>
+                        <option>Sverige</option>
+                        <option>Norge</option>
+                        <option>Finland</option>
+                        <option>Island</option>
+                        <option>Danmark</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    
+       
+        <div class="field">
+            <label class="label">Kön</label>
+            <div class="control">
+                <label class="radio">
+                    <input type="radio" name="gender" id="genderMale" value="Man" checked>Man</label>
+                <label class="radio">
+                    <input 
+                        type="radio" name="gender" id="genderFemale" value="Kvinna">Kvinna</label>
+            </div>
+        </div>
+    
+       
+        <div class="field">
+            <label class="label" for="info">Info</label>
+            <div class="control">
+                <textarea class="textarea" id="info" rows="3" placeholder="Skriv lite information om dig själv" required></textarea>
+            </div>
+        </div>
+    
+        <div class="field">
+            <div class="control">
+                <button 
+                    type="submit" 
+                    class="button is-primary"
+                >
+                    Submit
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>
+    
+
+    <script src="js/bulma.js"></script>
+</body>
+</html>

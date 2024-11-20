@@ -1,0 +1,103 @@
+
+.container {
+    display: flex;
+    margin-top: 8%;
+}
+
+
+
+#home-container {
+    max-width: 700px;
+    padding: 20px;
+    margin-inline: auto;
+    margin-top: 20px;
+    width: 50%;
+    color: white;
+}
+
+#home-container h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#typing-effect {
+    border-right: 2px solid white;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(30, end) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+#home-container p {
+    font-size: 24px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    animation: fade-in 3s ease-in;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#image-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+#image-grid img {
+    width: 200px;
+    transition: width 0.5s ease;
+    animation: fade-in 2s ease;
+}
+
+#image-grid img:hover {
+    width: 300px;
+}
+
+@media (max-width: 1400px){
+    #home-container h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1200px){
+    #home-container h1 {
+        font-size: 30px;
+    }
+
+    #home-container p {
+        font-size: 18px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #home-container {
+        width: 100%;
+    }
+    
+    #image-grid {
+    margin-inline: auto;
+    }
+}

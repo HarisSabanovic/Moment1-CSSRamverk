@@ -50,7 +50,6 @@ function saveTableData() {
 
 
 function loadData() {
-    tableEl.querySelector("tbody").innerHTML = "";
     let tableData = JSON.parse(localStorage.getItem("tableData"));
 
     if (tableData) {

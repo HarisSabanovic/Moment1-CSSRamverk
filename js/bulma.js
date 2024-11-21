@@ -66,7 +66,6 @@ function saveTableData() {
 
 
 function loadData() {
-    tableEl.querySelector("tbody").innerHTML = "";
     let bulmaData = JSON.parse(localStorage.getItem("bulmaData"));
 
     if (bulmaData) {

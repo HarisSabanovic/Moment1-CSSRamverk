@@ -61,7 +61,7 @@ function saveTableData() {
 
     localStorage.setItem("bulmaData", JSON.stringify(bulmaData));
 
-    loadData();
+
 }
 
 

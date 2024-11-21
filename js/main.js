@@ -44,9 +44,7 @@ function saveTableData() {
 
     localStorage.setItem("tableData", JSON.stringify(tableData));
 
-  
 
-    loadData();
 }
 
 

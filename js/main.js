@@ -23,7 +23,6 @@ formEL.addEventListener("submit", (e) => {
     `;
 
     tableEl.querySelector("tbody").appendChild(newPerson);
-
     saveTableData();
 
 });
@@ -44,6 +43,9 @@ function saveTableData() {
     })
 
     localStorage.setItem("tableData", JSON.stringify(tableData));
+
+    // Rensa tabellen innan nya rader läggs till
+    tableEl.querySelector("tbody").innerHTML = "";
 
     loadData();
 }

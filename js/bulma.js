@@ -69,6 +69,8 @@ function loadData() {
     tableEl.querySelector("tbody").innerHTML = "";
     let bulmaData = JSON.parse(localStorage.getItem("bulmaData"));
 
+    console.log(bulmaData);
+
     if (bulmaData) {
         bulmaData.forEach(person => {
             let newPerson = document.createElement("tr");

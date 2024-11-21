@@ -54,6 +54,8 @@ function loadData() {
     tableEl.querySelector("tbody").innerHTML = "";
     let tableData = JSON.parse(localStorage.getItem("tableData"));
 
+    console.log(tableData);
+
     if (tableData) {
         tableData.forEach(person => {
             let newPerson = document.createElement("tr");

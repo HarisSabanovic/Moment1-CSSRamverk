@@ -66,12 +66,13 @@ function saveTableData() {
 
 
 function loadData() {
-    tableEl.querySelector("tbody").innerHTML = "";
     let bulmaData = JSON.parse(localStorage.getItem("bulmaData"));
 
     console.log(bulmaData);
 
     if (bulmaData) {
+        tableEl.querySelector("tbody").innerHTML = "";
+        
         bulmaData.forEach(person => {
             let newPerson = document.createElement("tr");
 

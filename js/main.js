@@ -49,12 +49,13 @@ function saveTableData() {
 
 
 function loadData() {
-    tableEl.querySelector("tbody").innerHTML = "";
     let tableData = JSON.parse(localStorage.getItem("tableData"));
 
     console.log(tableData);
 
     if (tableData) {
+        tableEl.querySelector("tbody").innerHTML = "";
+        
         tableData.forEach(person => {
             let newPerson = document.createElement("tr");
 

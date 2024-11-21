@@ -61,13 +61,12 @@ function saveTableData() {
 
     localStorage.setItem("bulmaData", JSON.stringify(bulmaData));
 
-    tableEl.querySelector("tbody").innerHTML = "";
-
     loadData();
 }
 
 
 function loadData() {
+    tableEl.querySelector("tbody").innerHTML = "";
     let bulmaData = JSON.parse(localStorage.getItem("bulmaData"));
 
     if (bulmaData) {

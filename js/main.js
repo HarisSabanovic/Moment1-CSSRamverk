@@ -2,7 +2,7 @@
 const formEL = document.getElementById("formID");
 const tableEl = document.getElementById("tableID");
 
-document.addEventListener("DOMContentLoaded", loadData);
+loadData();
 
 formEL.addEventListener("submit", (e) => {
     e.preventDefault();

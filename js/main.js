@@ -51,9 +51,9 @@ function saveTableData() {
 
 
 function loadData() {
+     // Rensa tabellen innan nya rader läggs till
+     tableEl.querySelector("tbody").innerHTML = "";
     let tableData = JSON.parse(localStorage.getItem("tableData"));
-      // Rensa tabellen innan nya rader läggs till
-      tableEl.querySelector("tbody").innerHTML = "";
 
     if (tableData) {
         tableData.forEach(person => {
